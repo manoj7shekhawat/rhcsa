@@ -1,0 +1,9 @@
+Question: Compress a directory (/usr/share/doc) using gzip utility with name: archive.tgz. We should be able to un-compress it with gzip
+
+Solution:
+
+tar cvf - /usr/share/doc | gzip > archive.tgz
+
+gzip -d archive.tgz 
+
+tar -xvf archive.tar
