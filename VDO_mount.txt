@@ -1,0 +1,3 @@
+Question: Use the un-partioned disk and make its size of 50 GB mounted persistently on /vdomyvdo
+
+Solution:
