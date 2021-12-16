@@ -1,3 +1,0 @@
-Question: Find all lines with work sync in /usr/share/dictionary and write results in file /root/myfile. It should contain the lines as it is wiothout empty lines.
-
-Solution:
