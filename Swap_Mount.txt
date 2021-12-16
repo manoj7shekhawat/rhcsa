@@ -1,0 +1,3 @@
+Question: Add a 756M swap space and make sure it remains persistent after reboot.
+
+Solution:
