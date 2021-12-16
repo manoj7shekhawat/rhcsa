@@ -1,0 +1,5 @@
+Question: Download root less container image rsyslog for user adam. Mount volume: /home/adam/log_dir to /var/log in container. Also make use that container comes
+          up automatically when system is rebooted.
+          
+  
+Solution:
