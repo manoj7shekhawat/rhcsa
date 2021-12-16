@@ -1,0 +1,3 @@
+Question: Tune the current system and modify the profile to best suite the node2. Make sure it remains persistent after reboot.
+
+Solution:
