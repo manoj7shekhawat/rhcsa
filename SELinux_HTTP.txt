@@ -1,0 +1,3 @@
+Question: Troubleshoot HTTP running on port 82. Also make sure it can server pages from /var/www/html directory
+
+Solution:
