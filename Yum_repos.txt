@@ -1,0 +1,3 @@
+Question: On node1 add two repos http://network9.example.com/BaseOS & http://network9.exaample.com/AppStream
+
+Solution:
