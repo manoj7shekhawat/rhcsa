@@ -1,4 +1,5 @@
-Question: Add two users natasha and henry. Their password should be nimsdeg. Create a new group adminagrp. Add natasha and henry to admingroup. Now copy /etc/fstab to /var/tmp/. Make sure all members of admingroup has access to the copied file. But henry should have no read/write access.
+Question: Add two users natasha and henry. Their password should be nimsdeg. Create a new group adminagrp. Add natasha and henry to admingroup. 
+          Now copy /etc/fstab to /var/tmp/. Make sure all members of admingroup has access to the copied file. But henry should have no read/write access.
 
 
 Solution:
