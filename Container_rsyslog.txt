@@ -52,3 +52,21 @@ systemctl --user daemon-reload
 reboot
 
 podman ps
+
+
+# If it is not started then check Restart under [Service] if it is set to on-failure
+systemctl --user cat container-rsyslog.service
+
+# Overwrite Restart to always and RestartSec to 1 in nano editor
+systemctl --user edit container-rsyslog.service
+          [Service]
+          Restart=always
+          RestartSec=1
+          
+# reload daemon
+systemctl --user daemon-reload
+
+# reboot to verify that container is indeed up after rebooting
+reboot
+
+podman ps
