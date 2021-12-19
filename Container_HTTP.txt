@@ -14,3 +14,53 @@ Question: As the mshekhawat user, create a detached apache HTTP web server conta
           
           
 Soultion:
+
+yum module install container-tools
+
+podman login registry.redhat.io
+
+skopeo inspect docker://registry.redhat.io/rhel8/httpd-24
+
+podman pull registry.redhat.io/rhel8/httpd-24:1-112
+
+podman images
+
+mkdir -p ~/storage/html/
+
+cd ~/storage/html
+
+vim index.html
+           <h1>My Container Apache HTTP Web Server</h1>
+           
+podman run -d --name mysite -p 8080:8080 -v /home/mshekhawat/storage:/var/www:Z -e HTTPD_USER=admin -e HTTPD_PASSWORD=admin registry.redhat.io/rhel8/httpd-24:1-112
+
+podman ps
+
+mkdir -p ~/.config/systemd/user
+
+cd ~/.config/systemd/user
+
+podman generate systemd --name mysite --files
+
+loginctl enable-user mshekhawat
+
+systemctl --user enable container-mysite.service
+
+systemctl --user daemon-reload
+
+su -
+
+firewall-cmd --add-service=http
+firewall-cmd --add-service=httpd
+firewall-cmd --add-service=http --permanent
+firewall-cmd --add-service=httpd --permanent
+
+firewall-cmd --reload
+firewall-cmd --list-all
+
+# Now reboot system and verify
+reboot
+podman ps
+
+# From node2
+curl http:172.24.9.10:8080 
