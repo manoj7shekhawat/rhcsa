@@ -56,8 +56,8 @@ ls -ltr
 # Now we need to give ACL on students directory for profs group:
 getfacl students/
 
-setfacl -m d:g:profs:rw students
-setfacl -m g:profs:rw students
+setfacl -m d:g:profs:rx students
+setfacl -m g:profs:rx students
 
 # Verify the ACLs
 getfacl students/
