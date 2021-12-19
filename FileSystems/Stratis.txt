@@ -63,3 +63,6 @@ ls
 stratis filesystem snapshot myspool mysfs mysnp
 
 stratis filesystem list
+
+# Check the size
+stratis blockdev list myspool
