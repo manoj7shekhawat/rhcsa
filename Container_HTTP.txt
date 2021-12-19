@@ -36,13 +36,18 @@ podman run -d --name mysite -p 8080:8080 -v /home/mshekhawat/storage:/var/www:Z 
 
 podman ps
 
+
+loginctl show-user mshekhawat
+
+loginctl enable-user mshekhawat
+
+loginctl show-user mshekhawat
+
 mkdir -p ~/.config/systemd/user
 
 cd ~/.config/systemd/user
 
 podman generate systemd --name mysite --files
-
-loginctl enable-user mshekhawat
 
 systemctl --user enable container-mysite.service
 
