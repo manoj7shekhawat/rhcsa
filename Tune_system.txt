@@ -1,3 +1,14 @@
 Question: Tune the current system and modify the profile to best suite the node2. Make sure it remains persistent after reboot.
 
 Solution:
+
+# Check current profile
+tuned-adm list
+
+# Change profile to virtual-guest
+tuned-adm profile virtual-guest
+
+# Verify again after reboot
+reboot
+
+tuned-adm list
