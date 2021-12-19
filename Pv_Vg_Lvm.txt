@@ -1,4 +1,5 @@
-Question: Create a volume group with name myvgex, and set 16M as a extends. And divided a volume group containing 50 extends on volume group lvext, make it as ext4 file system, and mounted automatically under /mnt/lvext.
+Question: Create a volume group with name myvgex, and set 16M as a extends. And divided a volume group containing 50 extends on volume group lvext, 
+	  make it as ext4 file system, and mounted automatically under /mnt/lvext.
 
 Solution:
 
