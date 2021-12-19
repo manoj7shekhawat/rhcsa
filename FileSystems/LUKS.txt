@@ -1,5 +1,5 @@
 Question: Create 1 GB of Luks encrypted volume using device /dev/sdd
-		- Name should be mysecret
+		- Name should be mysecret mounted persistently on /secretdir
 		- Use the passphrase: Welcome@321
 		- Automate LuksOpen by default
 
