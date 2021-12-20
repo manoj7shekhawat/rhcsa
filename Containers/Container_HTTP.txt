@@ -55,13 +55,11 @@ systemctl --user daemon-reload
 
 su -
 
-firewall-cmd --add-service=http
-firewall-cmd --add-service=httpd
-firewall-cmd --add-service=http --permanent
-firewall-cmd --add-service=httpd --permanent
+firewall-cmd --add-port=8080/tcp
+firewall-cmd --add-port=8080/tcp --permanent
 
 firewall-cmd --reload
-firewall-cmd --list-all
+firewall-cmd --list-ports
 
 # Now reboot system and verify
 reboot
