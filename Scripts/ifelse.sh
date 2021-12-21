@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Question: Script should take one argument only with values
-		# - Yes|YES it should print awesome
-		# - No|NO it should print That's bad
-		# For anything else it should print it's usage as: Usage: ./ifelse.sh Yes|No
+# 		- Yes|YES it should print awesome
+# 		- No|NO it should print That's bad
+#		- For anything else it should print it's usage as: Usage: ./ifelse.sh Yes|No
 
 if [ $# != 1 ]
 then
