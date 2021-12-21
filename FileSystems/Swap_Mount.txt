@@ -18,7 +18,7 @@ mount -a
 # Check existing swap
 free -m
 
-swapon /dev/nvme0n1p4
+swapon -a
 
 # After swapon we should now see extended swap
 free -m
