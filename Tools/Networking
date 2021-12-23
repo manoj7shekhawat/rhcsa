@@ -4,3 +4,5 @@ Solution:
 
 # Easy way to do this is via
 nmtui
+
+# Reference: https://linuxconfig.org/rhel-8-configure-static-ip-address
