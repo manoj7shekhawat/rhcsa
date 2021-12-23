@@ -19,3 +19,6 @@ firewall-cmd --add-service=ntp --permanent
 firewall-cmd --add-service=ntp
 
 firewall-cmd --reload
+
+
+# Reference:: https://linuxconfig.org/redhat-8-configure-ntp-server
